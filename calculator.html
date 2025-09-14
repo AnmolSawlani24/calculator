@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <link rel="stylesheet" href="calculator.css">
+    <title>calculator</title>
+</head>
+<body>
+    
+    <div id="calculator">
+        <h3 id="heading">A functional calculator</h3>
+        <input type="text" id="display" readonly>
+        <div id="button_container">
+            <button class="button" onclick="display_variable='';document.querySelector('#display').value=display_variable;">C</button>
+            <button class="button" onclick="display_variable=display_variable+'1'; document.querySelector('#display').value=display_variable;">1</button>
+            <button class="button" onclick="display_variable=display_variable+'2';  document.querySelector('#display').value=display_variable;">2</button>
+            <button class="button" onclick="display_variable=display_variable+'+'; document.querySelector('#display').value=display_variable;">+</button>
+           <button class="button" onclick="display_variable=display_variable+'3'; document.querySelector('#display').value=display_variable;">3</button>
+           <button class="button" onclick="display_variable=display_variable+'4'; document.querySelector('#display').value=display_variable;">4</button>
+           <button class="button" onclick="display_variable=display_variable+'-' ;document.querySelector('#display').value=display_variable;">-</button>
+           <button class="button" onclick="display_variable=display_variable+'5' ;document.querySelector('#display').value=display_variable;">5</button>
+           <button class="button" onclick="display_variable=display_variable+'6' ; document.querySelector('#display').value=display_variable;">6</button>
+           <button class="button" onclick="display_variable=display_variable+'*' ;document.querySelector('#display').value=display_variable;">*</button>
+           <button class="button" onclick="display_variable=display_variable+'7' ;document.querySelector('#display').value=display_variable;">7</button>
+           <button class="button"onclick="display_variable=display_variable+'8' ;document.querySelector('#display').value=display_variable;">8</button>
+           <button class="button" onclick="display_variable=display_variable+'/' ;document.querySelector('#display').value=display_variable;">/</button>
+           <button class="button" onclick="let result=eval(display_variable);
+            display_variable=result; document.querySelector('#display').value=display_variable;">=</button>
+            
+
+          
+           <button class="button" onclick="display_variable=display_variable+'9' ;document.querySelector('#display').value=display_variable;">9</button>
+           <button class="button" onclick="display_variable=display_variable+'0' ;document.querySelector('#display').value=display_variable;">0</button>
+           <button class="button" onclick="display_variable=display_variable+'.' ;document.querySelector('#display').value=display_variable;">.</button>
+        </div>
+    </div>
+    <script>
+        let display_variable='';
+        document.querySelector('#display').value=display_variable;
+    </script>
+    
+</body>
+</html>
